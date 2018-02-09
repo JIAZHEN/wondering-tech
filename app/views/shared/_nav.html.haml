@@ -1,0 +1,181 @@
+%header#header-container
+  / Header
+  #header
+    .container
+      / Left Side Content
+      .left-side
+        / Logo
+        #logo
+          %a{:href => "index.html"}
+            %img{:alt => "", :src => "images/logo.png"}/
+        / Mobile Navigation
+        .mmenu-trigger
+          %button.hamburger.hamburger--collapse{:type => "button"}
+            %span.hamburger-box
+              %span.hamburger-inner
+        / Main Navigation
+        %nav#navigation.style-1
+          %ul#responsive
+            %li
+              %a.current{:href => "#"} Home
+              %ul
+                %li
+                  %a{:href => "index.html"} Home 1
+                %li
+                  %a{:href => "index-2.html"} Home 2
+                %li
+                  %a{:href => "index-3.html"} Home 3
+                %li
+                  %a{:href => "index-4.html"} Home 4
+            %li
+              %a{:href => "#"} Listings
+              %ul
+                %li
+                  %a{:href => "#"} List Layout
+                  %ul
+                    %li
+                      %a{:href => "listings-list-with-sidebar.html"} With Sidebar
+                    %li
+                      %a{:href => "listings-list-full-width.html"} Full Width
+                %li
+                  %a{:href => "#"} Grid Layout
+                  %ul
+                    %li
+                      %a{:href => "listings-grid-with-sidebar-1.html"} With Sidebar 1
+                    %li
+                      %a{:href => "listings-grid-with-sidebar-2.html"} With Sidebar 2
+                    %li
+                      %a{:href => "listings-grid-full-width.html"} Full Width
+                %li
+                  %a{:href => "#"} Half Screen Map
+                  %ul
+                    %li
+                      %a{:href => "listings-half-screen-map-list.html"} List Layout
+                    %li
+                      %a{:href => "listings-half-screen-map-grid-1.html"} Grid Layout 1
+                    %li
+                      %a{:href => "listings-half-screen-map-grid-2.html"} Grid Layout 2
+                %li
+                  %a{:href => "listings-single-page.html"} Single Listing
+            %li
+              %a{:href => "#"} User Panel
+              %ul
+                %li
+                  %a{:href => "dashboard.html"} Dashboard
+                %li
+                  %a{:href => "dashboard-messages.html"} Messages
+                %li
+                  %a{:href => "dashboard-bookings.html"} Bookings
+                %li
+                  %a{:href => "dashboard-my-listings.html"} My Listings
+                %li
+                  %a{:href => "dashboard-reviews.html"} Reviews
+                %li
+                  %a{:href => "dashboard-bookmarks.html"} Bookmarks
+                %li
+                  %a{:href => "dashboard-add-listing.html"} Add Listing
+                %li
+                  %a{:href => "dashboard-my-profile.html"} My Profile
+                %li
+                  %a{:href => "dashboard-invoice.html"} Invoice
+            %li
+              %a{:href => "#"} Pages
+              %ul
+                %li
+                  %a{:href => "pages-user-profile.html"} User Profile
+                %li
+                  %a{:href => "pages-booking.html"} Booking Page
+                %li
+                  %a{:href => "pages-blog.html"} Blog
+                  %ul
+                    %li
+                      %a{:href => "pages-blog.html"} Blog
+                    %li
+                      %a{:href => "pages-blog-post.html"} Blog Post
+                %li
+                  %a{:href => "pages-contact.html"} Contact
+                %li
+                  %a{:href => "pages-coming-soon.html"} Coming Soon
+                %li
+                  %a{:href => "pages-elements.html"} Elements
+                %li
+                  %a{:href => "pages-pricing-tables.html"} Pricing Tables
+                %li
+                  %a{:href => "pages-typography.html"} Typography
+                %li
+                  %a{:href => "pages-404.html"} 404 Page
+                %li
+                  %a{:href => "pages-icons.html"} Icons
+        .clearfix
+        / Main Navigation / End
+      / Left Side Content / End
+      / Right Side Content / End
+      .right-side
+        .header-widget
+          %a.sign-in.popup-with-zoom-anim{:href => "#sign-in-dialog"}
+            %i.sl.sl-icon-login
+            Sign In
+          %a.button.border.with-icon{:href => "dashboard-add-listing.html"}
+            Add Listing
+            %i.sl.sl-icon-plus
+      / Right Side Content / End
+      / Sign In Popup
+      #sign-in-dialog.zoom-anim-dialog.mfp-hide
+        .small-dialog-header
+          %h3 Sign In
+        / Tabs
+        .sign-in-form.style-1
+          %ul.tabs-nav
+            %li
+              %a{:href => "#tab1"} Log In
+            %li
+              %a{:href => "#tab2"} Register
+          .tabs-container.alt
+            / Login
+            #tab1.tab-content{:style => "display: none;"}
+              %form.login{:method => "post"}
+                %p.form-row.form-row-wide
+                  %label{:for => "username"}
+                    Username:
+                    %i.im.im-icon-Male
+                    %input#username.input-text{:name => "username", :type => "text", :value => ""}/
+                %p.form-row.form-row-wide
+                  %label{:for => "password"}
+                    Password:
+                    %i.im.im-icon-Lock-2
+                    %input#password.input-text{:name => "password", :type => "password"}/
+                  %span.lost_password
+                    %a{:href => "#"} Lost Your Password?
+                .form-row
+                  %input.button.border.margin-top-5{:name => "login", :type => "submit", :value => "Login"}/
+                  .checkboxes.margin-top-10
+                    %input#remember-me{:name => "check", :type => "checkbox"}/
+                    %label{:for => "remember-me"} Remember Me
+            / Register
+            #tab2.tab-content{:style => "display: none;"}
+              %form.register{:method => "post"}
+                %p.form-row.form-row-wide
+                  %label{:for => "username2"}
+                    Username:
+                    %i.im.im-icon-Male
+                    %input#username2.input-text{:name => "username", :type => "text", :value => ""}/
+                %p.form-row.form-row-wide
+                  %label{:for => "email2"}
+                    Email Address:
+                    %i.im.im-icon-Mail
+                    %input#email2.input-text{:name => "email", :type => "text", :value => ""}/
+                %p.form-row.form-row-wide
+                  %label{:for => "password1"}
+                    Password:
+                    %i.im.im-icon-Lock-2
+                    %input#password1.input-text{:name => "password1", :type => "password"}/
+                %p.form-row.form-row-wide
+                  %label{:for => "password2"}
+                    Repeat Password:
+                    %i.im.im-icon-Lock-2
+                    %input#password2.input-text{:name => "password2", :type => "password"}/
+                %input.button.border.fw.margin-top-10{:name => "register", :type => "submit", :value => "Register"}/
+      / Sign In Popup / End
+  / Header / End
+.clearfix
+/ Header Container / End

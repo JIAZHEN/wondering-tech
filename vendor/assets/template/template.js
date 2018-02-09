@@ -1,0 +1,12 @@
+//= require template/scripts/jquery-2.2.0.min
+//= require template/scripts/mmenu.min
+//= require template/scripts/chosen.min
+//= require template/scripts/slick.min
+//= require template/scripts/rangeslider.min
+//= require template/scripts/magnific-popup.min
+//= require template/scripts/waypoints.min
+//= require template/scripts/counterup.min
+//= require template/scripts/jquery-ui.min
+//= require template/scripts/tooltips.min
+//= require template/scripts/custom
+//= require template/scripts/datedropper
