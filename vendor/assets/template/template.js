@@ -9,4 +9,14 @@
 //= require template/scripts/jquery-ui.min
 //= require template/scripts/tooltips.min
 //= require template/scripts/custom
-//= require template/scripts/datedropper
+//= require template/scripts/themepunch.tools.min
+//= require template/scripts/themepunch.revolution.min
+//= require template/scripts/extensions/revolution.extension.actions.min
+//= require template/scripts/extensions/revolution.extension.carousel.min
+//= require template/scripts/extensions/revolution.extension.kenburn.min
+//= require template/scripts/extensions/revolution.extension.layeranimation.min
+//= require template/scripts/extensions/revolution.extension.migration.min
+//= require template/scripts/extensions/revolution.extension.navigation.min
+//= require template/scripts/extensions/revolution.extension.parallax.min
+//= require template/scripts/extensions/revolution.extension.slideanims.min
+//= require template/scripts/extensions/revolution.extension.video.min
