@@ -30,6 +30,14 @@
       / Right Side Content / End
       .right-side
         .header-widget
+          %ul.lang
+            %li.lang-icon
+              %i.sl.sl-icon-globe
+            %li
+              %a{:href => url_for(lang: :en)} English
+            %li
+              %a{:href => url_for(lang: :"zh-CN")} 中文
+
           %a.moveToLink.button.border.with-icon{:href => "#contact"}
             = t(:contact_us)
             %i.im.im-icon-Business-Woman
