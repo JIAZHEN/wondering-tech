@@ -7,7 +7,7 @@
         / Logo
         #logo
           %a{:href => "index.html"}
-            %img{:alt => "", :src => "images/logo.png"}/
+            %img{:alt => "", :src => image_path("template/images/logo.png")}/
         / Mobile Navigation
         .mmenu-trigger
           %button.hamburger.hamburger--collapse{:type => "button"}
@@ -119,63 +119,6 @@
             Add Listing
             %i.sl.sl-icon-plus
       / Right Side Content / End
-      / Sign In Popup
-      #sign-in-dialog.zoom-anim-dialog.mfp-hide
-        .small-dialog-header
-          %h3 Sign In
-        / Tabs
-        .sign-in-form.style-1
-          %ul.tabs-nav
-            %li
-              %a{:href => "#tab1"} Log In
-            %li
-              %a{:href => "#tab2"} Register
-          .tabs-container.alt
-            / Login
-            #tab1.tab-content{:style => "display: none;"}
-              %form.login{:method => "post"}
-                %p.form-row.form-row-wide
-                  %label{:for => "username"}
-                    Username:
-                    %i.im.im-icon-Male
-                    %input#username.input-text{:name => "username", :type => "text", :value => ""}/
-                %p.form-row.form-row-wide
-                  %label{:for => "password"}
-                    Password:
-                    %i.im.im-icon-Lock-2
-                    %input#password.input-text{:name => "password", :type => "password"}/
-                  %span.lost_password
-                    %a{:href => "#"} Lost Your Password?
-                .form-row
-                  %input.button.border.margin-top-5{:name => "login", :type => "submit", :value => "Login"}/
-                  .checkboxes.margin-top-10
-                    %input#remember-me{:name => "check", :type => "checkbox"}/
-                    %label{:for => "remember-me"} Remember Me
-            / Register
-            #tab2.tab-content{:style => "display: none;"}
-              %form.register{:method => "post"}
-                %p.form-row.form-row-wide
-                  %label{:for => "username2"}
-                    Username:
-                    %i.im.im-icon-Male
-                    %input#username2.input-text{:name => "username", :type => "text", :value => ""}/
-                %p.form-row.form-row-wide
-                  %label{:for => "email2"}
-                    Email Address:
-                    %i.im.im-icon-Mail
-                    %input#email2.input-text{:name => "email", :type => "text", :value => ""}/
-                %p.form-row.form-row-wide
-                  %label{:for => "password1"}
-                    Password:
-                    %i.im.im-icon-Lock-2
-                    %input#password1.input-text{:name => "password1", :type => "password"}/
-                %p.form-row.form-row-wide
-                  %label{:for => "password2"}
-                    Repeat Password:
-                    %i.im.im-icon-Lock-2
-                    %input#password2.input-text{:name => "password2", :type => "password"}/
-                %input.button.border.fw.margin-top-10{:name => "register", :type => "submit", :value => "Register"}/
-      / Sign In Popup / End
   / Header / End
 .clearfix
 / Header Container / End
