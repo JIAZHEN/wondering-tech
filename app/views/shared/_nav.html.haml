@@ -6,7 +6,7 @@
       .left-side
         / Logo
         #logo
-          %a{:href => "index.html"}
+          %a{:href => root_path}
             %img{:alt => "", :src => image_path("template/images/logo.png")}/
         / Mobile Navigation
         .mmenu-trigger
@@ -17,13 +17,13 @@
         %nav#navigation.style-1
           %ul#responsive
             %li
-              %a.moveToLink.current{:href => "#rev_slider_4_1_wrapper"} Home
+              %a.moveToLink.current{:href => "#rev_slider_4_1_wrapper"}= t(:home)
             %li
-              %a.moveToLink{:href => "#our-services"} Our Services
+              %a.moveToLink{:href => "#our-services"}= t(:our_services)
             %li
-              %a.moveToLink{:href => "#our-story"} Our Story
+              %a.moveToLink{:href => "#our-story"}= t(:our_story)
             %li
-              %a.moveToLink{:href => "#how-it-works"} How It Works
+              %a.moveToLink{:href => "#how-it-works"}= t(:how_it_works)
         .clearfix
         / Main Navigation / End
       / Left Side Content / End
@@ -31,7 +31,7 @@
       .right-side
         .header-widget
           %a.moveToLink.button.border.with-icon{:href => "#contact"}
-            Contact us
+            = t(:contact_us)
             %i.im.im-icon-Business-Woman
       / Right Side Content / End
   / Header / End
