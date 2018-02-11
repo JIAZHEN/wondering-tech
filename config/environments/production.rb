@@ -86,7 +86,6 @@ Rails.application.configure do
     :address        => ENV["MAIL_SMTP_SERVER"],
     :user_name      => ENV["MAIL_SMTP_LOGIN"],
     :password       => ENV["MAIL_SMTP_PASSWORD"],
-    :domain         => ENV["APP_DOMAIN"],
     :authentication => :plain,
     :enable_starttls_auto => true
   }
