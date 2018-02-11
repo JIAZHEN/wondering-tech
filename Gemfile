@@ -17,7 +17,7 @@ gem "sass-rails"
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 gem "haml-rails"
-gem 'pg'
+gem 'pg', '~> 0.18'
 gem "http_accept_language"
 
 group :development, :test do
