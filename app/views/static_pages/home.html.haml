@@ -76,26 +76,26 @@
       / Item
       .fw-carousel-review
         .testimonial-box
-          .testimonial Many small businesses are struggling to rebuild the website or develop an app, or do not know the technology out there can solve their day-to-day problems.
+          .testimonial= t(:story_1)
         .testimonial-author
-          %h4
-            THE REASON
+          %h4= t(:story_1_title)
+
 
       / Item
       .fw-carousel-review
         .testimonial-box
-          .testimonial The skilled IT consultants can wear many hats, and in doing so, help your company run more smoothly. We can contribute to the efficiency of your office as well as be optimising the costs. In the meantime, using technology to boost the business.
+          .testimonial= t(:story_2)
         .testimonial-author
-          %h4
-            THE VISION
+          %h4= t(:story_2_title)
+
 
       / Item
       .fw-carousel-review
         .testimonial-box
-          .testimonial Building website and mobile app, developing the internal system that fits your need. We have dynamic algorithms to discover the business insight as well as the AI techniques to ease your day-to-day jobs.
+          .testimonial= t(:story_3)
         .testimonial-author
-          %h4
-            THE TECHNOLOGY
+          %h4= t(:story_3_title)
+
 
   / Categories Carousel / End
 
@@ -115,22 +115,22 @@
       .col-md-4
         .icon-box-2.with-line
           %i.im.im-icon-Map2
-          %h3 In-house Analysis
-          %p Our specialist will spend a day or two in your office to fully understand the current IT system, services, problems and costs
+          %h3= t(:step_1_title)
+          %p= t(:step_1)
       / Stage
       .col-md-4
         .icon-box-2.with-line
           %i.im.im-icon-Cloud-Computer
-          %h3 IT Solutions
-          %p
-            We produce the solution document then present to the board
+          %h3= t(:step_2_title)
+          %p= t(:step_2)
+
 
       / Stage
       .col-md-4
         .icon-box-2
           %i.im.im-icon-Approved-Window
-          %h3 Execution
-          %p We define the time-scale and execute the solution plan for you
+          %h3= t(:step_3_title)
+          %p= t(:step_3)
   / Info Section / End
   / Container / End
 / Pricing Tables / End
@@ -142,44 +142,44 @@
         %h4.headline.margin-bottom-30= t(:contact_us)
         / Contact Details
         .sidebar-textbox
-          %p Find The Best It Solution For Your Business
+          %p= t(:slogan)
           %ul.contact-details
             %li
               %i.im.im-icon-Phone-2
-              %strong Phone:
-              %span= t(:phone)
+              %strong #{t(:phone)}:
+              %span= t(:phone_number)
             %li
               %i.fa.fa-wechat
-              %strong Wechat:
+              %strong #{t(:wechat)}:
               %span jiazhenjoe
             %li
               %i.im.im-icon-Globe
-              %strong Web:
+              %strong #{t(:web)}:
               %span
                 %a{:href => "www.wondering.tech"} www.wondering.tech
             %li
               %i.im.im-icon-Envelope
-              %strong E-Mail:
+              %strong #{t(:email)}:
               %span
                 %a{:href => "#"}= t(:contact_email)
       / Contact Form
       .col-md-8
         %section#contact
-          %h4.headline.margin-bottom-35 Contact Form
+          %h4.headline.margin-bottom-35= t(:contact_form)
           #contact-message
           %form#contactform{:action => "contact.php", :autocomplete => "on", :method => "post", :name => "contactform"}
             .row
               .col-md-6
                 %div
-                  %input#name{:name => "name", :placeholder => "Your Name", :required => "required", :type => "text"}/
+                  %input#name{:name => "name", :placeholder => t(:your_name), :required => "required", :type => "text"}/
               .col-md-6
                 %div
-                  %input#email{:name => "email", :pattern => "^[A-Za-z0-9](([_\\.\\-]?[a-zA-Z0-9]+)*)@([A-Za-z0-9]+)(([\\.\\-]?[a-zA-Z0-9]+)*)\\.([A-Za-z]{2,})$", :placeholder => "Email Address", :required => "required", :type => "email"}/
+                  %input#email{:name => "email", :pattern => "^[A-Za-z0-9](([_\\.\\-]?[a-zA-Z0-9]+)*)@([A-Za-z0-9]+)(([\\.\\-]?[a-zA-Z0-9]+)*)\\.([A-Za-z]{2,})$", :placeholder => t(:email_address), :required => "required", :type => "email"}/
             %div
-              %input#subject{:name => "subject", :placeholder => "Subject", :required => "required", :type => "text"}/
+              %input#subject{:name => "subject", :placeholder => t(:subject), :required => "required", :type => "text"}/
             %div
-              %textarea#comments{:cols => "40", :name => "comments", :placeholder => "Message", :required => "required", :rows => "3", :spellcheck => "true"}
-            %input#submit.submit.button{:type => "submit", :value => "Submit Message"}/
+              %textarea#comments{:cols => "40", :name => "comments", :placeholder => t(:message), :required => "required", :rows => "3", :spellcheck => "true"}
+            %input#submit.submit.button{:type => "submit", :value => t(:submit_message)}/
       / Contact Form / End
   / Container / End
 

@@ -11,7 +11,7 @@
         %br/
         %p= t(:slogan)
       .col-md-4.col-sm-6
-        %h4 Helpful Links
+        %h4= t(:helpful_links)
         %ul.footer-links
           %li
             %a{:href => root_path}= t(:home)
@@ -33,10 +33,10 @@
             North Greenwich 
             London, SE10 0ER
           %br/
-          Phone:
-          %span= t(:phone)
+          #{t(:phone)}:
+          %span= t(:phone_number)
           %br/
-          E-Mail:
+          #{t(:email)}:
           %span
             %a{:href => "#"}= t(:contact_email)
           %br/
