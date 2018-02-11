@@ -6822,16 +6822,16 @@ body .notification strong { border: none; }
 /* Testimonials
 ------------------------------------- */
 .testimonial-box {
-	background: transparent;
-	border-radius: 6px;
-	padding: 38px;
-	padding-left: 50px;
-	color: #888;
-	position: relative;
-	margin: 18px 0;
-	box-shadow: none;
-	transition: 0.4s;
-	cursor: grab;
+  background: transparent;
+  border-radius: 6px;
+  padding: 38px;
+  padding-left: 110px;
+  color: #888;
+  position: relative;
+  margin: 18px 0;
+  box-shadow: none;
+  transition: 0.4s;
+  cursor: grab;
 }
 
 .testimonial-carousel .slick-slide {
@@ -6891,7 +6891,34 @@ body .notification strong { border: none; }
 	font-size: 15px;
 }
 
+.testimonial:before {
+    position: absolute;
+    margin: 0 auto;
+    display: block;
+    width: 100%;
+    text-align: center;
+    bottom: -10px;
+    left: 0;
+    content: "\f0dd";
+    font-family: "FontAwesome";
+    font-size: 42px;
+    color: transparent;
+    background-color: transparent;
+    cursor: default;
+}
 
+.testimonial:after {
+    position: absolute;
+    top: 47px;
+    left: 42px;
+    content: "\f10d";
+    font-family: "FontAwesome";
+    font-size: 38px;
+    opacity: 0.3;
+    color: #222;
+    background-color: transparent;
+    cursor: default;
+}
 
 .testimonial-box .star-rating {
 	height: 30px;

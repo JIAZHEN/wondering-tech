@@ -68,7 +68,7 @@
       .col-md-8.col-md-offset-2
         %h3.headline.centered
           = t(:our_story)
-
+          %span.margin-top-25= t(:choose_us)
   / Info Section / End
   / Categories Carousel
   .fullwidth-carousel-container.margin-top-20
@@ -78,14 +78,15 @@
         .testimonial-box
           .testimonial= t(:story_1)
         .testimonial-author
+          %img{:alt => "", :src => image_path("template/images/happy-client-01.jpg")}/
           %h4= t(:story_1_title)
-
 
       / Item
       .fw-carousel-review
         .testimonial-box
           .testimonial= t(:story_2)
         .testimonial-author
+          %img{:alt => "", :src => image_path("template/images/happy-client-02.jpg")}/
           %h4= t(:story_2_title)
 
 
@@ -94,6 +95,7 @@
         .testimonial-box
           .testimonial= t(:story_3)
         .testimonial-author
+          %img{:alt => "", :src => image_path("template/images/happy-client-03.jpg")}/
           %h4= t(:story_3_title)
 
 
