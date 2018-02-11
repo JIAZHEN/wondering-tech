@@ -15,7 +15,7 @@
           / Caption Content
           #slide-2-layer-1.R_title.margin-bottom-15{"data-basealign" => "slide", "data-fontsize" => "['42','36', '32','36','22']", "data-height" => "none", "data-hoffset" => "['0','0','40','0']", "data-lineheight" => "['70','60','60','45','35']", "data-responsive" => "off", "data-responsive_offset" => "off", "data-splitin" => "none", "data-splitout" => "none", "data-start" => "600", "data-transform_idle" => "o:1;", "data-transform_in" => "y:-50px;sX:2;sY:2;opacity:0;s:1000;e:Power4.easeOut;", "data-transform_out" => "opacity:0;s:300;", "data-voffset" => "['-40','-40','-20','-80']", "data-whitespace" => "normal", "data-width" => "['640','640', 640','420','320']", "data-x" => "['left','center','center','center']", "data-y" => "['middle','middle','middle','middle']", :style => "z-index: 6; color: #fff; letter-spacing: 0px; font-weight: 600; "}= t(:slider_1_title)
           .caption-text= t(:slider_1_content)
-          %a.button.medium{:href => "#contact"}= t(:contact_us)
+          %a.moveToLink.button.medium{:href => "#contact"}= t(:contact_us)
       / Slide
       %li{"data-easein" => "Power4.easeInOut", "data-easeout" => "Power4.easeInOut", "data-fsmasterspeed" => "800", "data-fsslotamount" => "7", "data-fstransition" => "fade", "data-index" => "rs-2", "data-masterspeed" => "1000", "data-rotate" => "0", "data-saveperformance" => "off", "data-slotamount" => "default", "data-transition" => "fade"}
         / Background
@@ -25,7 +25,7 @@
           / Caption Content
           #slide-2-layer-3.R_title.margin-bottom-15{"data-basealign" => "slide", "data-fontsize" => "['42','36', '32','36','22']", "data-height" => "none", "data-hoffset" => "['0','0','0','0']", "data-lineheight" => "['70','60','60','45','35']", "data-responsive" => "off", "data-responsive_offset" => "off", "data-splitin" => "none", "data-splitout" => "none", "data-start" => "600", "data-transform_idle" => "o:1;", "data-transform_in" => "y:-50px;sX:2;sY:2;opacity:0;s:1000;e:Power4.easeOut;", "data-transform_out" => "opacity:0;s:300;", "data-voffset" => "['-40','-40','-20','-80']", "data-whitespace" => "normal", "data-width" => "['640','640', 640','420','320']", "data-x" => "['center','center','center','center']", "data-y" => "['middle','middle','middle','middle']", :style => "z-index: 6; color: #fff; letter-spacing: 0px; font-weight: 600; "}= t(:slider_2_title)
           .caption-text= t(:slider_2_content)
-          %a.button.medium{:href => "#contact"}= t(:contact_us)
+          %a.moveToLink.button.medium{:href => "#contact"}= t(:contact_us)
     .tp-static-layers
 / Revolution Slider / End
 /
@@ -169,18 +169,19 @@
         %section#contact
           %h4.headline.margin-bottom-35= t(:contact_form)
           #contact-message
-          %form#contactform{:action => "contact.php", :autocomplete => "on", :method => "post", :name => "contactform"}
+          = form_tag(contact_message_path) do
+            = render "shared/flash_messages"
             .row
               .col-md-6
                 %div
-                  %input#name{:name => "name", :placeholder => t(:your_name), :required => "required", :type => "text"}/
+                  %input#name{:name => "contact[name]", :placeholder => t(:your_name), :required => "required", :type => "text"}/
               .col-md-6
                 %div
-                  %input#email{:name => "email", :pattern => "^[A-Za-z0-9](([_\\.\\-]?[a-zA-Z0-9]+)*)@([A-Za-z0-9]+)(([\\.\\-]?[a-zA-Z0-9]+)*)\\.([A-Za-z]{2,})$", :placeholder => t(:email_address), :required => "required", :type => "email"}/
+                  %input#email{:name => "contact[email]", :pattern => "^[A-Za-z0-9](([_\\.\\-]?[a-zA-Z0-9]+)*)@([A-Za-z0-9]+)(([\\.\\-]?[a-zA-Z0-9]+)*)\\.([A-Za-z]{2,})$", :placeholder => t(:email_address), :required => "required", :type => "email"}/
             %div
-              %input#subject{:name => "subject", :placeholder => t(:subject), :required => "required", :type => "text"}/
+              %input#subject{:name => "contact[subject]", :placeholder => t(:subject), :required => "required", :type => "text"}/
             %div
-              %textarea#comments{:cols => "40", :name => "comments", :placeholder => t(:message), :required => "required", :rows => "3", :spellcheck => "true"}
+              %textarea#comments{:cols => "40", :name => "contact[message]", :placeholder => t(:message), :required => "required", :rows => "3", :spellcheck => "true"}
             %input#submit.submit.button{:type => "submit", :value => t(:submit_message)}/
       / Contact Form / End
   / Container / End

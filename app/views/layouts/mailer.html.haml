@@ -1,8 +1,21 @@
 !!!
-%html
+%html{:xmlns => "http://www.w3.org/1999/xhtml"}
   %head
-    %meta{:content => "text/html; charset=utf-8", "http-equiv" => "Content-Type"}/
-    :css
-      /* Email styles need to be inline */
-  %body
+    %meta{:content => "width=device-width", :name => "viewport"}/
+    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    = stylesheet_link_tag "template/css/email", media: "all"
+
+  %body{:bgcolor => "#FFFFFF"}
+    %table.head-wrap{:bgcolor => "#ffffff"}
+      %tr
+        %td
+        %td.header.container
+          .content
+            %table{:bgcolor => "#ffffff"}
+              %tr
+                %td
+                  = image_tag "template/images/logo.png"
+                %td{:align => "right"}
+        %td
+
     = yield

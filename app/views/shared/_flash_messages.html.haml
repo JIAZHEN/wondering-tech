@@ -1,0 +1,10 @@
+- flash.each do |message_type, message|
+  .notification.closeable{:class => "flash-alert #{message_type}"}
+    %p= message
+    %a.close
+
+- unless flash.empty?
+  :javascript
+    $(".flash-alert").fadeTo(10000, 500).slideUp(1000, function(){
+      $(this).alert('close');
+    });

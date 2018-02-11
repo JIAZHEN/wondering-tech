@@ -1,0 +1,20 @@
+%table.body-wrap
+  %tr
+    %td
+    %td.container{:bgcolor => "#FFFFFF"}
+      .content
+        %table
+          %tr
+            %td
+              %h3 Message from #{@info[:name]}
+              %p.lead #{@info[:subject]}
+
+              %p #{@info[:message]}
+              %p.callout
+                #{@info[:name]}'s email address is #{@info[:email]}
+
+              %p
+                Thank you.
+                %br
+                #{t(:company_name)}
+    %td

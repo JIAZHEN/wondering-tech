@@ -105,6 +105,7 @@ $(document).ready(function(){
       var element = $( $(this).attr('href') );
       var margintop = parseInt(element.css('marginTop'), 10);
 
+
       $("body, html").animate({
           scrollTop: (element.offset().top - margintop)
       }, 600);
