@@ -45,6 +45,18 @@ $(document).ready(function(){
 
 			}
 			$(".mm-next").addClass("mm-fullsubopen");
+
+
+			$(".moveToLink").on("click", function( e ) {
+		      e.preventDefault();
+		      var element = $( $(this).attr('href') );
+		      var margintop = parseInt(element.css('marginTop'), 10);
+
+		      $("body, html").animate({
+		          scrollTop: (element.offset().top - margintop)
+		      }, 600);
+
+		  });
 		}
 		mmenuInit();
 		$(window).resize(function() { mmenuInit(); });
@@ -98,20 +110,6 @@ $(document).ready(function(){
 	 $('html, body').animate({scrollTop:0}, scrollSpeed);
 	 return false;
 	});
-
-	$(".moveToLink").on("click", function( e ) {
-
-      e.preventDefault();
-      var element = $( $(this).attr('href') );
-      var margintop = parseInt(element.css('marginTop'), 10);
-
-
-      $("body, html").animate({
-          scrollTop: (element.offset().top - margintop)
-      }, 600);
-
-  });
-
 
 	/*----------------------------------------------------*/
 	/*  Inline CSS replacement for backgrounds etc.
