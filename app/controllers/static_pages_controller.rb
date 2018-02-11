@@ -10,7 +10,7 @@ class StaticPagesController < ApplicationController
       flash[:error] = "All message fields cannot be empty."
     end
 
-    redirect_to root_path(:anchor => "contact")
+    redirect_to "#{t(:domain)}/#contact"
   end
 
   private
