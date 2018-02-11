@@ -13,6 +13,8 @@
     = favicon_link_tag 'template/images/favicon.png'
 
   %body
+    %div{:style => "display:none;"}
+      %img{:alt => "", :src => image_path("template/images/wechat-img.jpg")}/
     #wrapper
       = render "shared/nav"
       = yield
