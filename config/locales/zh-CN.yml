@@ -7,6 +7,7 @@ zh-CN:
   how_it_works: "服务流程"
   contact_us: "联系我们"
   slogan: "最适合您企业的技术解决方案"
+  free_trial: "免费咨询"
 
   slider_1_title: "最适合您企业的技术解决方案"
   slider_1_content: "IT顾问服务可以帮助您专注于您真正需要的东西，并使技术、操作和财务目标保持一致。"
@@ -38,7 +39,7 @@ zh-CN:
   web: "网站"
   email: "邮箱"
   email_address: "邮件地址"
-  contact_form: "联系方式"
+  contact_form: "开始您的免费咨询"
   your_name: "您的姓名"
   submit_message: "提交信息"
   message: "请输入内容"
@@ -47,4 +48,6 @@ zh-CN:
 
   helpful_links: "帮助链接"
 
-  company_meta_title: "万径科技 | 英国软件技术咨询顾问 | 您的共享CTO"
+  meta_title: "万径科技 | 英国软件技术咨询顾问 | 您的共享首席技术官"
+  meta_keywords: "英国软件技术咨询顾问，共享首席技术官，影子首席技术官，软件开发顾问，技术风控，企业软件技术培训，AI文本分类"
+  meta_description: "英国的IT咨询公司帮助您控制IT成本，开发您想要的软件和系统。我们是您的影子CTO。"

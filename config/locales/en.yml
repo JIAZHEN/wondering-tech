@@ -7,6 +7,7 @@ en:
   how_it_works: "How It Works"
   contact_us: "Contact Us"
   slogan: "Find The Best It Solution For Your Business"
+  free_trial: "FREE TRIAL"
 
   slider_1_title: "Find The Best IT Solution"
   slider_1_content: "Software consulting services help you focus on what you really need and align technology, operational and financial objectives."
@@ -38,7 +39,7 @@ en:
   web: "Web"
   email: "E-Mail"
   email_address: "Email Address"
-  contact_form: "Contact Form"
+  contact_form: "Start Your Free Trial"
   your_name: "Your Name"
   submit_message: "Submit Message"
   message: "Message"
@@ -47,4 +48,6 @@ en:
 
   helpful_links: "Helpful Links"
 
-  company_meta_title: "WonderingTech | IT Constantly | Your Shared CTO"
+  meta_title: "WonderingTech | IT Consultancy | Your Shared CTO"
+  meta_keywords: "IT Consultancy, Shared CTO, Shadow CTO, Software Consultancy, IT Budget Control, IT Training, Text Classification"
+  meta_description: "UK based IT Consultancy that helps you control the IT costs, develop desired software and system. We are your shadow CTO."
