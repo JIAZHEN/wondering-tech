@@ -59,8 +59,6 @@
         .img-box-content.visible
           %h4= t(:software_system_training)
 
-/ Container / End
-/ Fullwidth Section
 %section#our-story.fullwidth.margin-top-70.padding-top-75.padding-bottom-70{"data-background-color" => "#f9f9f9"}
   / Info Section
   .container
@@ -98,11 +96,6 @@
           %img{:alt => "", :src => image_path("template/images/happy-client-03.jpg")}/
           %h4= t(:story_3_title)
 
-
-  / Categories Carousel / End
-
-/ Fullwidth Section / End
-/ Pricing Tables
 %section#how-it-works.fullwidth.margin-top-70.margin-bottom-65{"data-background-color" => "#fff"}
   / Container / Start
   / Info Section
@@ -133,9 +126,9 @@
           %i.im.im-icon-Approved-Window
           %h3= t(:step_3_title)
           %p= t(:step_3)
-  / Info Section / End
-  / Container / End
-/ Pricing Tables / End
+
+= render "pricing_table"
+
 %section#contact.fullwidth.border-top.margin-top-40.margin-bottom-0.padding-top-60.padding-bottom-65{"data-background-color" => "#f9f9f9"}
   .container
     .row

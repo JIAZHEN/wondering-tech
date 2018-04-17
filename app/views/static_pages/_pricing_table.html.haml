@@ -1,0 +1,51 @@
+%section.fullwidth.margin-top-0.padding-top-75.padding-bottom-65{"data-background-color" => "#fff"}
+  / Container / Start
+  .container
+    .row
+      .col-md-12
+        %h3.headline.centered.margin-bottom-50= t(:pricing_slogan)
+    / Row / Start
+    .row
+      .col-md-12
+        .pricing-container.margin-top-30
+          / Plan #1
+          .plan
+            .plan-price
+              %h3= t(:data_analysis)
+            .plan-features
+              %ul
+                %li= t(:data_analyse)
+                %li= t(:market_research)
+                %li= t(:accounting)
+                %li= t(:crm_sym)
+                %li= t(:hr_sym)
+              %a.button.border{:href => "#contact"}= t(:free_trial)
+          / Plan #3
+          .plan.featured
+            .listing-badge
+              %span.featured Featured
+            .plan-price
+              %h3= t(:web_development)
+              %span.value= t(:web_price_tag)
+            .plan-features
+              %ul
+                %li= t(:page_design)
+                %li= t(:web_testing)
+                %li= t(:seo_sem)
+                %li= t(:custom_web)
+                %li= t(:web_payment)
+              %a.button{:href => "#contact"}= t(:free_trial)
+          / Plan #3
+          .plan
+            .plan-price
+              %h3= t(:ent_it_consultancy)
+            .plan-features
+              %ul
+                %li= t(:ent_support)
+                %li= t(:automation)
+                %li= t(:security)
+                %li= t(:training)
+                %li= t(:budget)
+              %a.button.border{:href => "#contact"}= t(:free_trial)
+    / Row / End
+  / Container / End

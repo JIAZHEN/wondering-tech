@@ -51,3 +51,28 @@ zh-CN:
   meta_title: "万径科技 | 英国软件技术咨询顾问 | 您的共享首席技术官"
   meta_keywords: "英国软件技术咨询顾问，共享首席技术官，影子首席技术官，软件开发顾问，技术风控，企业软件技术培训，AI文本分类"
   meta_description: "英国的IT咨询公司帮助您控制IT成本，开发您想要的软件和系统。我们是您的影子CTO。"
+
+  pricing_slogan: "简单，透明的定价"
+
+  web_development: "网站设计与开发"
+  web_price_tag: "£350 起"
+  page_design: "页面设计"
+  presentation_web: "展示功能开发"
+  web_testing: "网站测试"
+  seo_sem: "搜索引擎优化与线上推广"
+  custom_web: "网站定制"
+  web_payment: "线上线下支付系统"
+
+  data_analysis: "数据分析与市场拓展"
+  data_analyse: "数据分析"
+  market_research: "市场调研和分析"
+  accounting: "财务系统建设与分析"
+  crm_sym: "CRM系统建设"
+  hr_sym: "人力资源管理系统定制"
+
+  ent_it_consultancy: "企业IT顾问"
+  ent_support: "创业支持项目申请"
+  automation: "办公自动化"
+  security: "企业网络安全建设"
+  training: "企业IT外包"
+  budget: "IT预算优化"

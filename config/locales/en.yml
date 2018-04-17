@@ -51,3 +51,28 @@ en:
   meta_title: "WonderingTech | IT Consultancy | Your Shared CTO"
   meta_keywords: "IT Consultancy, Shared CTO, Shadow CTO, Software Consultancy, IT Budget Control, IT Training, Text Classification"
   meta_description: "UK based IT Consultancy that helps you control the IT costs, develop desired software and system. We are your shadow CTO."
+
+  pricing_slogan: "Simple, transparent pricing."
+
+  web_development: "Website Development"
+  web_price_tag: "from £350"
+  page_design: "Website Design"
+  presentation_web: "Demonstration site"
+  web_testing: "Website Testing"
+  seo_sem: "SEO & SEM"
+  custom_web: "Customised Website"
+  web_payment: "Online & Office Payment System"
+
+  data_analysis: "Business Intelligence"
+  data_analyse: "Data Analysis"
+  market_research: "Marketing Research"
+  accounting: "Accounting System Development"
+  crm_sym: "CRM System Development"
+  hr_sym: "HR System Development"
+
+  ent_it_consultancy: "IT Consultancy"
+  ent_support: "Startup Support Scheme"
+  automation: "Office Automation"
+  security: "Internet Security"
+  training: "IT Outsource"
+  budget: "IT Budget Optimisation"
