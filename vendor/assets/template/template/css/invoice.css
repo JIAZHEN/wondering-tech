@@ -59,10 +59,6 @@ p {
     clear: both;
 }
 
-#logo img {
-  max-height: 44px;
-}
-
 #details { text-align: right; }
 
 table {
